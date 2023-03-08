@@ -2,10 +2,10 @@ name: 'Deploy to Azure App Service'
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
 
 env:
   AZURE_WEBAPP_PACKAGE_PATH: '.'
