@@ -8,7 +8,7 @@ on:
 
 env:
   AZURE_WEBAPP_PACKAGE_PATH: '.'
-  AZURE_WEBAPP_NAME: samplewebapp33
+  AZURE_WEBAPP_NAME: sampleapp44
 
 jobs:
   build:
