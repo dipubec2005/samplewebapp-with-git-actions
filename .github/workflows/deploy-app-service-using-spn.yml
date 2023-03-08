@@ -14,9 +14,9 @@ env:
   AZURE_WEBAPP_NAME: sampleapp44
 
 jobs:
-  build:
+  Build-and-Deploy:
     runs-on: ubuntu-latest
-
+    environment : development
     steps:
     - uses: actions/checkout@v2
     
