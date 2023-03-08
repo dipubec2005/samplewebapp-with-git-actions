@@ -2,6 +2,12 @@ name: 'Deploy to Azure App Service using spn'
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - develop
+    paths:
+      - '**'
+      - '!Documentation/**'
   
 env:
   AZURE_WEBAPP_PACKAGE_PATH: '.'
