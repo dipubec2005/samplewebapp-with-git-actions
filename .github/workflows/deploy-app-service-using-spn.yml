@@ -9,7 +9,6 @@ env:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -40,6 +39,6 @@ jobs:
         app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
         package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
       
-      - name: logout
-        run: |
-          az logout
+    - name: logout
+      run: |
+        az logout
