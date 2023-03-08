@@ -61,6 +61,7 @@ jobs:
       with: 
         app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
         package: .
+        app-settings-json: '${{ secrets.APP_SETTINGS }}' 
       
     - name: logout
       run: |
