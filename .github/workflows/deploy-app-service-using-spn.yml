@@ -59,8 +59,12 @@ jobs:
     - name: 'Run Azure webapp deploy action using publish profile credentials'
       uses: azure/webapps-deploy@v2
       with: 
-        app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
+        app-name: ${{ env.AZURE_WEBAPP_NAME }} 
         package: .
+        
+    - uses: azure/appservice-settings@v1
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
         app-settings-json: '${{ secrets.APP_SETTINGS }}' 
       
     - name: logout
