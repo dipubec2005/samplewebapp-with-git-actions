@@ -65,7 +65,7 @@ jobs:
     - uses: azure/appservice-settings@v1
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        app-settings-json: '${{ secrets.APP_SETTINGS }}' 
+        app-settings-json: '${{ vars.APP_SETTINGS_VAR }}' 
       
     - name: logout
       run: |
